@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.json({ message: 'Route works' });
+  res.json({ message: 'Admin route works' });
 });
 
 module.exports = router;

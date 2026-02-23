@@ -1,0 +1,28 @@
+info:
+  name: Create Book
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://effective-computing-machine-66p5pxxwwrg34xwj-3000.app.github.dev/api/books
+  headers:
+    - name: Authorization
+      value: Bearer
+  body:
+    type: json
+    data: |-
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "year": 1949,
+        "genre": "Dystopia",
+        "description": "Totalitarian future"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
