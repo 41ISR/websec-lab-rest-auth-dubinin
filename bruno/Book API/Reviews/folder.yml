@@ -1,0 +1,7 @@
+info:
+  name: Reviews
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
